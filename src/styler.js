@@ -1,10 +1,10 @@
 function toggleNightMode() {
   const style = document.getElementById('style-link');
 
-  if (style.getAttribute('href') == 'src/style-light.css') {
-    style.setAttribute('href', 'src/style-dark.css');
+  if (style.getAttribute('href') == './src/style-light.css') {
+    style.setAttribute('href', './src/style-dark.css');
   } else {
-    style.setAttribute('href', 'src/style-light.css');
+    style.setAttribute('href', './src/style-light.css');
   }
 
   const images = document.getElementsByTagName('img');
