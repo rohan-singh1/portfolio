@@ -1,0 +1,21 @@
+@import '../src/style-common.css';
+
+:root {
+  /* Colors */
+  --transparent: rgba(0, 0, 0, 0);
+  --main-fg-color: rgb(14, 27, 14);
+  --background-gradient: linear-gradient(
+    to right top,
+    #e2feeb,
+    #d7f8ea,
+    #ccf3e9,
+    #c3ece9,
+    #bbe6e8
+  );
+  --dp-shadow: 2px 2px 1px var(--main-fg-color),
+    -2px -2px 1px var(--main-fg-color), -2px 2px 1px var(--main-fg-color),
+    2px -2px 1px var(--main-fg-color);
+  --dp-border: 4px solid var(--transparent);
+  --nav-bar-background: var(--transparent);
+  --nav-bar-image-background-hover: rgba(14, 27, 14, 0.2);
+}
