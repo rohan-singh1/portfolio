@@ -1,4 +1,8 @@
 :root {
+  /* Colors */
+  --transparent: rgba(0, 0, 0, 0);
+  --nav-bar-background: var(--transparent);
+
   /* Numeric Values */
   --nav-bar-image-size: 2em;
   --nav-bar-image-border-radius: 25%;
@@ -7,11 +11,16 @@
   --h1-size: 2.7em;
   --dp-size: 10em;
   --dp-border-radius: 25%;
+  --dp-border-thickness: 4px;
+  --dp-border: var(--dp-border-thickness) solid var(--transparent);
   --nav-bar-button-offset: 1em;
   --nav-bar-padding: 0;
   --nav-bar-margin: 0;
   --nav-bar-border: 0;
   --nav-bar-button-hover-transition-duration: 0.4s;
+  --dp-shadow: 1px 1px 1px var(--main-fg-color),
+    -1px -1px 1px var(--main-fg-color), 1px -1px 1px var(--main-fg-color),
+    -1px 1px 1px var(--main-fg-color);
 
   /* Fonts */
   --default-font: 'Open Sans Light';
