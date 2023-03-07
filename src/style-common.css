@@ -1,0 +1,87 @@
+:root {
+  /* Numeric Values */
+  --nav-bar-image-size: 2em;
+  --nav-bar-image-border-radius: 25%;
+  --nav-bar-image-padding: 1em;
+  --nav-bar-image-border-thickness: 1px;
+  --h1-size: 2.7em;
+  --dp-size: 10em;
+  --dp-border-radius: 25%;
+  --nav-bar-button-offset: 1em;
+  --nav-bar-padding: 0;
+  --nav-bar-margin: 0;
+  --nav-bar-border: 0;
+  --nav-bar-button-hover-transition-duration: 0.4s;
+
+  /* Fonts */
+  --default-font: 'Open Sans Light';
+
+  /* Others */
+  --center-align-text: center;
+  --background-specs: no-repeat center center fixed;
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff)
+    format('woff');
+}
+
+.dp {
+  width: var(--dp-size);
+  height: var(--dp-size);
+  border-radius: var(--dp-border-radius);
+  margin: auto;
+  box-shadow: var(--dp-shadow);
+  border: var(--dp-border);
+}
+
+.div-1 {
+  margin: auto;
+  width: fit-content;
+}
+
+.body {
+  background: var(--background-specs);
+  background-image: var(--background-gradient);
+}
+
+.h1 {
+  text-align: var(--center-align-text);
+  font-family: var(--default-font);
+  font-size: var(--h1-size);
+  color: var(--main-fg-color);
+  font-weight: 300;
+}
+
+.nav-bar-button {
+  position: absolute;
+  right: var(--nav-bar-button-offset);
+  top: var(--nav-bar-button-offset);
+  padding: var(--nav-bar-padding);
+  margin: var(--nav-bar-margin);
+  border: var(--nav-bar-border);
+  background-color: var(--nav-bar-background);
+}
+
+.nav-bar-image {
+  width: var(--nav-bar-image-size);
+  height: var(--nav-bar-button-image-size);
+  background-color: var(--nav-bar-background);
+  border: var(--nav-bar-image-border-thickness) solid var(--nav-bar-background);
+  border-radius: var(--nav-bar-image-border-radius);
+  padding: var(--nav-bar-image-padding);
+  transition: all var(--nav-bar-button-hover-transition-duration) ease;
+}
+
+.nav-bar-image:hover {
+  border: var(--nav-bar-image-border-thickness) solid var(--main-fg-color);
+  background-color: var(--nav-bar-image-background-hover);
+}
+
+#dp-holder {
+  margin: auto;
+  width: fit-content;
+}
