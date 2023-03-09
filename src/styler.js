@@ -17,3 +17,30 @@ function toggleNightMode() {
     }
   }
 }
+
+const collapsibleElements = document.getElementsByClassName('collapsible');
+
+for (let i = 0; i < collapsibleElements.length; i++) {
+  collapsibleElements[i].addEventListener('click', function () {
+    this.classList.toggle('active');
+    let content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      console.log(content.scrollHeight);
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
+  });
+}
+
+window.addEventListener('resize', function (event) {
+  const expandedElements = document.getElementsByClassName('section-content');
+  for (let i = 0; i < expandedElements.length; i++) {
+    if (expandedElements[i].style.maxHeight) {
+      expandedElements[i].style.maxHeight =
+        expandedElements[i].scrollHeight + 'px';
+    }
+    console.log(expandedElements[i].scrollHeight);
+  }
+  console.log('Test');
+});

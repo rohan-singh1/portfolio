@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rohan Singh</title>
-    <link id="style-link" rel="stylesheet" href="./src/style-dark.css" />
+    <link id="style-link" rel="stylesheet" href="./src/style-light.css" />
     <script defer src="./src/styler.js"></script>
     <link
       rel="shortcut icon"
@@ -14,30 +14,246 @@
   </head>
   <body class="body">
     <main class="main-document">
+      <div id="nav-bar-container">
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-link" href="#name-text">About</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#experience-section">Work Experience</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#projects-section">Projects</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
+          <button
+              class="nav-button"
+              title="Toggle Night Mode"
+              onclick="toggleNightMode()"
+            >
+              <img
+                src="./assets/img/light-mode/day-night.png"
+                alt="Button icon to switch between day and night modes"
+                class="nav-bar-image"
+                id="night-mode-image"
+              />
+            </button>
+        </nav>
+          <!-- <a href="#name-text" class="nav-bar-link"
+            ><div class="link-container">About</div></a
+          >
+          <a href="#experience-section" class="nav-bar-link"
+            ><div class="link-container">
+              <div class="link-wrapper">Experience</div>
+            </div></a
+          >
+          <a href="#projects-section" class="nav-bar-link"
+            ><div class="link-container">Projects</div></a
+          >
+          <a href="#contact" class="nav-bar-link"
+            ><div class="link-container">Contact</div></a
+          > -->
+          
+        </div>
+      </div>
       <div class="main-div">
-        <div id="photo-name" class="div-1">
-          <h1 class="h1">Rohan Singh</h1>
-          <div id="dp-holder">
-            <img
-              id="rohan-dp"
-              class="dp"
-              src="./assets/img/Rohan.jpg"
-              alt="Picture of Rohan Singh wearing sunglasses"
-            />
+        <h1 id="name-text">Rohan Singh</h1>
+        <div id="about-section" class="section">
+          <div id="photo-container">
+            <div id="photo-wrapper">
+              <img
+                id="rohan-dp"
+                class="dp"
+                src="./assets/img/Rohan.jpg"
+                alt="Picture of Rohan Singh wearing sunglasses"
+              />
+            </div>
+          </div>
+          <div id="about-text">
+            <p>
+              Hi! I am a graduate student at Portland State University. I used
+              to be a software engineer for four years before starting my
+              Master's program here. I primarily worked in the development of
+              Virtual Reality and Augmented Reality applications.
+            </p>
+            <p>
+              My area of specialisation was creating User Interface for the
+              VR/AR apps and my tech stack was initially C++ with Qt and Open
+              Scene Graph (based on OpenGL), and later Unreal Engine.
+            </p>
+            <p>
+              My projects are an open source notepad clone and a machine
+              learning application which predicts the real estate prices based
+              on existing data of a particular location, using gradient descent
+              algorithm.
+            </p>
+            <p>
+              I am also very interested in UI development for web applications
+              which is why I am exploring web development, particularly its
+              frontend and UI aspects.
+            </p>
           </div>
         </div>
-        <button
-          class="nav-bar-button"
-          title="Toggle Night Mode"
-          onclick="toggleNightMode()"
-        >
-          <img
-            src="./assets/img/dark-mode/day-night.png"
-            alt="Button icon to switch between day and night modes"
-            class="nav-bar-image"
-            id="night-mode-image"
-          />
-        </button>
+        <div id="experience-section" class="section">
+          <h1>Work Experience</h1>
+          <div id="experience-details">
+            <ul>
+              <li class="outer-list collapsible">WSP</li>
+              <div class="section-content">
+                <ul class="inner-list-area">
+                  <li class="inner-list">July 2021 - August 2022</li>
+                  <li class="inner-list">Engineer - Software Development</li>
+                  <li class="inner-list">Responsibilities:</li>
+                  <ul>
+                    <li class="inner-list">
+                      Implemented functionalities of the Azure Digital Twin
+                      (ADT) plugin using Blueprints in Unreal Engine in
+                      collaboration with Microsoft Corporation and Epic Games
+                      Inc.
+                    </li>
+                    <li class="inner-list">
+                      Designed and created User Interface (UI) in Unreal Motion
+                      Graphics (UMG) and GNU Image Manipulation Program (GIMP).
+                    </li>
+                    <li class="inner-list">
+                      Integrated UI with the back-end code and improved the
+                      aesthetics of the existing UI.
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+
+              <li class="outer-list collapsible">VizExperts</li>
+              <div class="section-content">
+                <ul class="inner-list-area">
+                  <li class="inner-list">September 2018 - July 2021</li>
+                  <li class="inner-list">Engineer - Frontend</li>
+                  <li class="inner-list">Responsibilities:</li>
+                  <ul>
+                    <li class="inner-list">
+                      Created GUI applications in C++ using Qt and integrated
+                      the Qt based code into the existing Open Scene Graph (OSG)
+                      based Virtual Reality (VR) project.
+                    </li>
+                    <li class="inner-list">
+                      Created and integrated subparts of the Augmented Reality
+                      (AR) project in Unreal Engine, using Blueprints (Visual
+                      Scripting) and C++, and created UI for them using UMG and
+                      GIMP.
+                    </li>
+                    <li class="inner-list">
+                      Created application modules in C++ & Blueprints for
+                      sending and fetching data from AWS based Nextcloud servers
+                      via REST API.
+                    </li>
+                    <li class="inner-list">
+                      Created Android packages (AR Version) and macOS packages
+                      of the application.
+                    </li>
+                    <li class="inner-list">
+                      Ensured the compatibility of the integrated code with both
+                      Head - Mounted Displays (HMDs) as well as monitor-based
+                      displays (Powerwall / Desktop).
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div id="projects-section" class="section">
+          <h1>Projects</h1>
+          <div id="experience-details">
+            <ul>
+              <li class="outer-list collapsible">Kommadek</li>
+              <div class="section-content">
+                <div class="inner-collapsible-area">
+                  <p>
+                    Kommadek is a GUI (Graphical User Interface) application for
+                    reading CSV (Comma Separated Values) files. It allows the
+                    user to select a CSV file from the local file system and
+                    then display it in a tabular format. It also allows the user
+                    to edit the contents of the CSV file and either overwrite
+                    the changes or save it as a separate file. It is a
+                    cross-platform application and can be used in macOS, Windows
+                    and Linux.
+                  </p>
+                  <p>
+                    The primary reason for building the project was that I was
+                    looking for a clean and minimal CSV reader which could
+                    display the contents of a CSV file in a tabular format when
+                    I was working in my previous company where I often had to
+                    work with CSV files in the project I was assigned to. Many
+                    such applications were available, but unfortunately most of
+                    them were shareware or adware or freemium software. I wanted
+                    at least a freeware application, if not open source.
+                    Unfortunately I could not find any such application for
+                    macOS so I wanted to make one myself instead, but I couldn't
+                    due to my workload. I eventually got the chance and I
+                    decided to create my own application, which would be always
+                    be open source and devoid of pesky ads and trial time
+                    limitations, and thus Kommadek was born.
+                  </p>
+                  <p>
+                    I used C++ for building Kommadek, and for GUI design and
+                    development, I used the Qt framework because Qt is a cross
+                    platform framework, so my application would be supported on
+                    multiple platforms and since I have prior work experience
+                    working with Qt, so I am quite comfortable with Qt, to the
+                    point that I enjoy creating applications with Qt.
+                  </p>
+                  <p>
+                    You can find the repository here:
+                    <a href="https://github.com/rohan-singh1/Kommadek"
+                      >Kommadek</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <li class="outer-list collapsible">Open Source Notepad Clone</li>
+              <div class="section-content">
+                <div class="inner-collapsible-area">
+                  <p>
+                    Open Source Notepad Clone is a GUI (Graphical User
+                    Interface) application for reading text based files. It is a
+                    cross-platform application and can be used in macOS, Windows
+                    and Linux.
+                  </p>
+
+                  <p>
+                    It also allows the user to adjust the opacity of the
+                    application via a slider. The reason I implemented this
+                    functionality was because while learning a new language, I
+                    do not prefer to copy and paste code snippets from the
+                    book/website I am learning from, as advised by a wise
+                    programmer I know. Instead I prefer to write down the
+                    complete syntax myself. As I did not have an extra monitor
+                    at the time I created this project, and because I found
+                    switching between windows particularly annoying, I decided
+                    to add an opacity slider which would allow the user to
+                    change the opacity of the editor to a level where text can
+                    be entered while looking at the code present in the
+                    book/website behind the editor.
+                  </p>
+                  <p>
+                    Just like for Kommadek, I used C++ for building Open Source
+                    Notepad Clone, and for GUI design and development, I used
+                    the Qt framework.
+                  </p>
+                  <p>
+                    Open Source Notepad Clone has not been hosted on any
+                    repository hosting service, but if I do host it later, I
+                    will add the link here.
+                  </p>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
   </body>

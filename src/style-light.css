@@ -12,4 +12,8 @@
     #bbe6e8
   );
   --nav-bar-image-background-hover: rgba(14, 27, 14, 0.2);
+  --section-content: rgba(14, 27, 14, 0.05);
+  --collapsible-header-background: rgba(14, 27, 14, 0.05);
+  --nav-bar-background: rgb(184, 225, 225);
+  --regular-shadow: 1px 1px 4px var(--main-fg-color);
 }
