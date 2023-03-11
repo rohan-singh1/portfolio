@@ -1,3 +1,6 @@
+/**
+ * To switch between dark mode and light mode
+ */
 function toggleNightMode() {
   const style = document.getElementById('style-link');
 
@@ -18,6 +21,10 @@ function toggleNightMode() {
   }
 }
 
+/**
+ * To automatically detect dark/light mode and
+ * implement the correct stylesheet accordingly
+ */
 if (
   window.matchMedia &&
   window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -25,8 +32,10 @@ if (
   toggleNightMode();
 }
 
+/**
+ * To toggle the expanded/collapsed state of collapsible sections
+ */
 const collapsibleElements = document.getElementsByClassName('collapsible');
-
 for (let i = 0; i < collapsibleElements.length; i++) {
   collapsibleElements[i].addEventListener('click', function () {
     this.classList.toggle('active');
@@ -39,6 +48,10 @@ for (let i = 0; i < collapsibleElements.length; i++) {
   });
 }
 
+/**
+ * To make the content adjust to updated size of
+ * the collapsible sections on resizing the window
+ */
 window.addEventListener('resize', function (event) {
   const expandedElements = document.getElementsByClassName('section-content');
   for (let i = 0; i < expandedElements.length; i++) {

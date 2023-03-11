@@ -1,7 +1,6 @@
 @import './style-common.css';
 
 :root {
-  /* Colors */
   --main-fg-color: rgb(14, 27, 14);
   --placeholder-color: rgb(14, 27, 14, 0.5);
   --background-gradient: linear-gradient(

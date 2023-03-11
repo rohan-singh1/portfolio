@@ -1,9 +1,6 @@
 @import './style-common.css';
 
 :root {
-  /* Colors */
-  --main-fg-color: rgb(183, 195, 183);
-  --placeholder-color: rgb(183, 195, 183, 0.5);
   --background-gradient: linear-gradient(
     to left top,
     #202020,
@@ -12,14 +9,15 @@
     #344343,
     #3e4f49
   );
-  --nav-bar-image-background-hover: rgba(183, 195, 183, 0.2);
-  --section-content: rgba(183, 195, 183, 0.05);
   --collapsible-header-background: rgba(183, 195, 183, 0.05);
-  --nav-bar-background: rgb(54, 67, 68);
-  --regular-shadow: 1px 1px 4px black;
-  --form-textbox-background-color: rgba(14, 27, 14, 0.05);
-  --form-shadow: 1px 1px 2px black;
   --form-button-hover-color: rgb(183, 195, 183, 0.5);
   --form-button-pressed-color: rgb(43, 46, 43, 0.4);
   --form-reset-color: rgba(71, 99, 71, 0.1);
+  --form-shadow: 1px 1px 2px black;
+  --form-textbox-background-color: rgba(14, 27, 14, 0.05);
+  --main-fg-color: rgb(183, 195, 183);
+  --nav-bar-background: rgb(54, 67, 68);
+  --nav-bar-image-background-hover: rgba(183, 195, 183, 0.2);
+  --placeholder-color: rgb(183, 195, 183, 0.5);
+  --regular-shadow: 1px 1px 4px black;
 }
