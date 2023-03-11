@@ -61,6 +61,10 @@ a {
   border-top-right-radius: var(--dp-border-radius);
 }
 
+.active:after {
+  content: '\002D';
+}
+
 .collapsible:hover {
   background-color: var(--nav-bar-image-background-hover);
 }
