@@ -1,5 +1,5 @@
-# portfolio
-Personal portfolio of Rohan Singh
+# Portfolio
+Personal portfolio of Rohan Singh. Created using HTML, CSS and Javascript.
 
 Live website here: https://rohan-singh1.github.io/portfolio/
 
