@@ -3,6 +3,7 @@
 :root {
   /* Colors */
   --main-fg-color: rgb(14, 27, 14);
+  --placeholder-color: rgb(14, 27, 14, 0.5);
   --background-gradient: linear-gradient(
     to right top,
     #e2feeb,
@@ -16,4 +17,9 @@
   --collapsible-header-background: rgba(14, 27, 14, 0.05);
   --nav-bar-background: rgb(184, 225, 225);
   --regular-shadow: 1px 1px 4px var(--main-fg-color);
+  --form-textbox-background-color: rgba(14, 27, 14, 0.1);
+  --form-shadow: 1px 1px 2px var(--main-fg-color);
+  --form-button-hover-color: rgb(201, 239, 233, 0.5);
+  --form-button-pressed-color: rgba(34, 54, 34, 0.4);
+  --form-reset-color: rgba(71, 99, 71, 0.1);
 }

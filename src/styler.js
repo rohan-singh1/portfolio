@@ -18,6 +18,13 @@ function toggleNightMode() {
   }
 }
 
+if (
+  window.matchMedia &&
+  window.matchMedia('(prefers-color-scheme: dark)').matches
+) {
+  toggleNightMode();
+}
+
 const collapsibleElements = document.getElementsByClassName('collapsible');
 
 for (let i = 0; i < collapsibleElements.length; i++) {
@@ -27,7 +34,6 @@ for (let i = 0; i < collapsibleElements.length; i++) {
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
-      console.log(content.scrollHeight);
       content.style.maxHeight = content.scrollHeight + 'px';
     }
   });
@@ -40,7 +46,5 @@ window.addEventListener('resize', function (event) {
       expandedElements[i].style.maxHeight =
         expandedElements[i].scrollHeight + 'px';
     }
-    console.log(expandedElements[i].scrollHeight);
   }
-  console.log('Test');
 });

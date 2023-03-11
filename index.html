@@ -31,34 +31,18 @@
             </li>
           </ul>
           <button
-              class="nav-button"
-              title="Toggle Night Mode"
-              onclick="toggleNightMode()"
-            >
-              <img
-                src="./assets/img/light-mode/day-night.png"
-                alt="Button icon to switch between day and night modes"
-                class="nav-bar-image"
-                id="night-mode-image"
-              />
-            </button>
+            class="nav-button"
+            title="Toggle Night Mode"
+            onclick="toggleNightMode()"
+          >
+            <img
+              src="./assets/img/light-mode/day-night.png"
+              alt="Button icon to switch between day and night modes"
+              class="nav-bar-image"
+              id="night-mode-image"
+            />
+          </button>
         </nav>
-          <!-- <a href="#name-text" class="nav-bar-link"
-            ><div class="link-container">About</div></a
-          >
-          <a href="#experience-section" class="nav-bar-link"
-            ><div class="link-container">
-              <div class="link-wrapper">Experience</div>
-            </div></a
-          >
-          <a href="#projects-section" class="nav-bar-link"
-            ><div class="link-container">Projects</div></a
-          >
-          <a href="#contact" class="nav-bar-link"
-            ><div class="link-container">Contact</div></a
-          > -->
-          
-        </div>
       </div>
       <div class="main-div">
         <h1 id="name-text">Rohan Singh</h1>
@@ -167,7 +151,7 @@
         </div>
         <div id="projects-section" class="section">
           <h1>Projects</h1>
-          <div id="experience-details">
+          <div id="projects-details">
             <ul>
               <li class="outer-list collapsible">Kommadek</li>
               <div class="section-content">
@@ -252,6 +236,66 @@
                 </div>
               </div>
             </ul>
+          </div>
+        </div>
+        <div id="contact-section" class="section">
+          <h1>Contact</h1>
+          <div id="contact-form-container">
+            <div class="contact-form">
+              <form action="./index.html">
+                <div class="form-row">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-textbox"
+                    id="name"
+                    name="name"
+                    value=""
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-textbox"
+                    id="email"
+                    name="email"
+                    value=""
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="contact-form-message" id="form-textarea-label"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-text-area"
+                    id="contact-form-message"
+                    name="message"
+                    rows="10"
+                    cols="80"
+                    placeholder="Enter your message here"
+                  ></textarea>
+                </div>
+                <div class="button-container">
+                  <input
+                    type="submit"
+                    class="form-button"
+                    id="submit-button"
+                    value="Submit"
+                  />
+                  <input
+                    type="reset"
+                    class="form-button"
+                    id="reset-button"
+                    value="Reset"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
