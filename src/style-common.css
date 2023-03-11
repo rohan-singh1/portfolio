@@ -554,7 +554,34 @@ p {
 
 @media (max-width: 422px) {
   body {
-    padding-top: 2em;
+    padding-top: 5em;
+  }
+
+  html {
+    scroll-padding-top: 9em;
+  }
+
+  .nav-list {
+    display: flex;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    font-size: 1em;
+    flex: 1 1 0;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .nav-list-item {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    width: 50%;
   }
 }
 
@@ -576,5 +603,15 @@ p {
 
   .section-content {
     display: block;
+  }
+}
+
+@media (max-width: 371px) {
+  body {
+    padding-top: 8em;
+  }
+
+  html {
+    scroll-padding-top: 12em;
   }
 }
