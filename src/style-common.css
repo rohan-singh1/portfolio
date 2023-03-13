@@ -556,13 +556,32 @@ p {
   }
 }
 
-@media (max-width: 422px) {
+@media (max-width: 750px) {
   body {
     padding-top: 2em;
   }
 
   html {
     scroll-padding-top: 6em;
+  }
+
+  .form-label {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: var(--nav-bar-image-border-radius);
+    border-top-right-radius: var(--nav-bar-image-border-radius);
+    display: block;
+    width: 100%;
+  }
+
+  .form-textbox {
+    border-bottom-left-radius: var(--nav-bar-image-border-radius);
+    border-bottom-right-radius: var(--nav-bar-image-border-radius);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
   }
 
   .nav-list {
@@ -590,6 +609,7 @@ p {
     margin: 0;
     width: 50%;
   }
+
 }
 
 @media (max-width: 1200px) {
