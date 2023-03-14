@@ -15,3 +15,4 @@ Live website here: https://rohan-singh1.github.io/portfolio/
 4. https://validator.w3.org/#validate_by_input
 5. https://webaim.org/
 6. https://www.piliapp.com/syntax-check/es6/
+7. https://mycolor.space/
